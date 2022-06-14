@@ -11,3 +11,21 @@ function writePassword() {
 }
 
 generateBtn.addEventListener("click", writePassword);
+
+function generatePassword(){
+
+}
+
+password = []
+
+var length = prompt("How many characters would you like your password to be?", "");
+
+if(length >= 8 && length <=128){
+  var wantNumbers = window.confirm("Do you want to include numbers?");
+  var wantUpper = window.confirm("Do you want to include upper case letters?");
+  var wantLower = window.confirm("Do you want to include lower case letters?");
+  var wantSpecial = window.confirm("Do you want to include special characters?") ;
+}
+
+
+
