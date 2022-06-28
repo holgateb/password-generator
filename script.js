@@ -11,8 +11,8 @@ function generatePassword() {
     prompt("How many characters would you like your password to be?")
   );
 
-  if (length < 8 || length > 128) {
-    alert("Password must be between 8 and 128 characters.");
+  if (length < 8 || length > 128 || isNaN(length)) {
+    alert("Password must be a number and be between 8 and 128 characters.");
     return null;
   }
 
